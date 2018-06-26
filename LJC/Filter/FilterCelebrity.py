@@ -1,5 +1,3 @@
-#http://search.kongfz.com/product_result/?status=0&catnum=17&pubdate=194901h201512&quality=70h&quaselect=3&price=5.00h2000.00&pagenum=3
-
 import requests
 import wget
 from pyquery import PyQuery as pq
@@ -57,8 +55,7 @@ i=18593
 herfSets=set()
 
 #driver = webdriver.Chrome()
-#driver = webdriver.PhantomJS()
-driver = webdriver.PhantomJS(service_args=['–ignore-ssl-errors=true','–ssl-protocol=TLSv1'])
+driver = webdriver.PhantomJS()
 for pages in range(1,21):
     page=pages
     time.sleep(1)
